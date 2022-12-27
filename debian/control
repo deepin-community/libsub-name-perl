@@ -1,0 +1,33 @@
+Source: libsub-name-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Ansgar Burchardt <ansgar@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               libdevel-checkbin-perl,
+               libtest-simple-perl,
+               perl
+Standards-Version: 4.4.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libsub-name-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libsub-name-perl.git
+Homepage: https://metacpan.org/release/Sub-Name
+Rules-Requires-Root: no
+
+Package: libsub-name-perl
+Architecture: any
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends}
+Description: module for assigning a new name to referenced sub
+ Sub::Name has only one function, which is also exported by default:
+ .
+ subname NAME, CODEREF
+ .
+ Assigns a new name to referenced sub. If package specification is
+ omitted in the name, then the current package is used. The return
+ value is the sub.
+ .
+ The name is only used for informative routines (caller, Carp, etc).
+ You won't be able to actually invoke the sub by the given name. To
+ allow that, you need to do glob-assignment yourself.
