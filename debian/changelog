@@ -1,8 +1,51 @@
-libsub-name-perl (0.26-deepin1) unstable; urgency=medium
+libsub-name-perl (0.28-1) unstable; urgency=medium
 
-  * Rebuild
+  * Team upload.
+  * Import upstream version 0.28.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.7.0.
 
- -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:46:35 +0800
+ -- gregor herrmann <gregoa@debian.org>  Sat, 21 Dec 2024 20:39:22 +0100
+
+libsub-name-perl (0.27-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 0.27.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.6.2.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 11 Jun 2023 03:17:48 +0200
+
+libsub-name-perl (0.26-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+  [ gregor herrmann ]
+  * debian/control: update Build-Depends for cross builds.
+  * debian/watch: use uscan version 4.
+
+  [ Debian Janitor ]
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ gregor herrmann ]
+  * Update 'DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow' to '=+all'.
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints.
+    + libsub-name-perl: Add Multi-Arch: same.
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.6.0, no changes needed.
+
+  [ gregor herrmann ]
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.6.1.
+  * Annotate test-only build dependencies with <!nocheck>.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 15 Aug 2022 16:32:43 +0200
 
 libsub-name-perl (0.26-1) unstable; urgency=medium
 

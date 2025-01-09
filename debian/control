@@ -4,11 +4,12 @@ Uploaders: Ansgar Burchardt <ansgar@debian.org>
 Section: perl
 Testsuite: autopkgtest-pkg-perl
 Priority: optional
-Build-Depends: debhelper-compat (= 12),
-               libdevel-checkbin-perl,
-               libtest-simple-perl,
-               perl
-Standards-Version: 4.4.1
+Build-Depends: debhelper-compat (= 13),
+               libdevel-checkbin-perl <!nocheck>,
+               libtest-simple-perl <!nocheck>,
+               perl-xs-dev,
+               perl:native
+Standards-Version: 4.7.0
 Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libsub-name-perl
 Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libsub-name-perl.git
 Homepage: https://metacpan.org/release/Sub-Name
@@ -16,6 +17,7 @@ Rules-Requires-Root: no
 
 Package: libsub-name-perl
 Architecture: any
+Multi-Arch: same
 Depends: ${misc:Depends},
          ${perl:Depends},
          ${shlibs:Depends}

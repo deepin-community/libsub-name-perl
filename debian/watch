@@ -1,2 +1,2 @@
-version=3
-https://metacpan.org/release/Sub-Name .*/Sub-Name-v?(\d.+)\.(?:tar\.gz|tar|tgz)$
+version=4
+https://metacpan.org/release/Sub-Name .*/Sub-Name-v?@ANY_VERSION@@ARCHIVE_EXT@$
